@@ -10,8 +10,4 @@ app.get("/status", (req,res) => {
     res.json({status: 'API is running'})
 })
 
-app.listen(port, () => {
-    console.log("App running on the port " + port)
-});
-
 module.exports = app;
