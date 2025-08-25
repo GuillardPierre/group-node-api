@@ -23,3 +23,7 @@ app.get("/users", (req,res) => {
 app.listen(port, () => {
     console.log("App running on the port " + port)
 });
+
+app.use((req, res) => {
+  res.status(404).send("Vous êtes perdus ? Page non trouvée");
+});
